@@ -1,3 +1,23 @@
 spring:
   application:
     name: encryption
+
+server:
+  servlet:
+    context-path: /encryption
+  error:
+    include-message: always
+  port: 8080
+springdoc:
+  api-docs:
+    path: /v1/openapi.json
+  swagger-ui:
+    path: /
+    disable-swagger-default-url: true
+    doc-expansion: none
+  pre-loading-enabled: true
+swagger:
+  url:
+    encryption: http://localhost:8080/encryption/
+validation:
+  container: 9879-28c48c42095709824yc5t79-24-ty792-497gcxg7-9247c4r-g97g82479c24g72gc4742c4c280g86c42865745y24739c5ct-2497859-257c24-795c27894-5gc24ct687-v252x2302vc3-2322gf246-28-82942876
