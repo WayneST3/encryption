@@ -9,13 +9,10 @@ server:
     include-message: always
   port: 8080
 springdoc:
-  api-docs:
-    path: /v1/openapi.json
   swagger-ui:
     path: /
     disable-swagger-default-url: true
     doc-expansion: none
-  pre-loading-enabled: true
 swagger:
   url:
     encryption: http://localhost:8080/encryption/
