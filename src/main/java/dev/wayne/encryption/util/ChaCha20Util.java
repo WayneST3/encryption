@@ -276,7 +276,7 @@ public class ChaCha20Util {
 
     private Map<String, String> convertStringToMap(String stringRepresentation) {
         try {
-            stringRepresentation = stringRepresentation.replaceAll("^Map\\(|\\)$", "");
+            stringRepresentation = stringRepresentation.replaceAll("\\{", "").replaceAll("\\}", "");
             Properties properties = new Properties();
             properties.load(new StringReader(stringRepresentation.replaceAll(", ", "\n")));
             Map<String, String> result = new HashMap<>();
